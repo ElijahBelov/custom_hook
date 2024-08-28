@@ -20,7 +20,7 @@ const FetchData = () => {
         if (myArrayObj[myPair][1].startsWith('https://')){
             output.push(<img className="fetch_Image" src={myArrayObj[myPair][1] } alt="Image not found"/>);
         } else {
-            output.push(<p><strong>{myArrayObj[myPair][0]}</strong> : {myArrayObj[myPair][1]}</p>);        
+            output.push(<p><strong>{myArrayObj[myPair][0].replace(/_|-/g, " ")}</strong> : {myArrayObj[myPair][1]}</p>);        
         }
     }
 
